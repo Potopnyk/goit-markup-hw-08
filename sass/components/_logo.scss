@@ -5,5 +5,11 @@
     line-height: 1.1923;
     color: var(--color-black);
     padding: 24px 0px 25px 0px;
-    margin-right: 93px;
+    // margin-right: 93px;
+    @media screen and (min-width: 768px) {
+        margin-right: 87px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;
+    }
 }
