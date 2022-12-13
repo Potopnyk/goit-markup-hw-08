@@ -1,0 +1,80 @@
+.hero {
+    background-color: var(--color-background);
+    padding: 118px 50px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/background.jpg);
+    background-repeat: no-repeat;
+    // max-width: 1600px;
+    margin: 0 auto;
+    @media screen and (min-width: 480px) {
+            max-width: 480px;
+            padding: 118px 50px;
+        }
+        @media screen and (min-width: 768px) {
+            max-width: 768px;
+            padding: 118px 189px;
+        }
+        @media screen and (min-width: 1200px) {
+            max-width: 1200px;
+            padding: 200px 237px;
+        }
+}
+
+.hero__title {
+    // width: 696px;
+    max-width: 100%;
+    margin: 0 auto;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: calc(42 / 26);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-white);
+    @media screen and (min-width: 1200px) {
+        font-size: 44px;
+        line-height: calc(60 / 44);
+        }
+}
+
+.hero__btn {
+    background: var(--color-blue);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    color: var(--color-white);
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 32px;
+    margin-top: 30px;
+    &:hover,
+    &:focus {
+        background-color: #188CE8;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        }
+}
+
+.hero_container {
+    padding: 0;
+    @media screen and (min-width: 480px) {
+            max-width: 480px;
+            padding: 118px 50px;
+        }
+    @media screen and (min-width: 768px) {
+            max-width: 768px;
+            padding: 118px 189px;
+        } 
+    @media screen and (min-width: 1200px) {
+            max-width: 1200px;
+            padding: 200px 237px;
+        }
+}

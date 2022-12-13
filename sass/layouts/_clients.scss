@@ -1,0 +1,74 @@
+.client {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 768px) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        } 
+    @media screen and (min-width: 1200px) {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
+}
+
+.client-title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: calc(33 / 28);
+    // font-size: 36px;
+    // line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--color-black);
+    margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 30px;
+        }
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+        font-size: 36px;
+        line-height: calc(42 / 36);
+        }
+}
+
+.client-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.client-item {
+    width: 100%;
+    width: calc((100% - 30px) / 2);
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 60px) / 3);
+    }
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 150px) / 6);
+    }
+}
+
+.client-link 
+    {
+    height: 92px;
+    border-radius: 4px;
+    color: #AFB1B8;
+    border: 1px solid rgba(175, 177, 184, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        border: 1px solid rgba(33, 150, 243, 1);
+        border-radius: 4px;
+        color: var(--color-blue);
+        }
+}
+
+.client-icons {
+    fill: currentColor;
+}
