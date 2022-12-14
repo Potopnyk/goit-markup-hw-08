@@ -21,7 +21,7 @@
 }
 
 .input-sign {
-    width: 450px;
+    width: 100%;
     height: 50px;
     background-color: transparent;
     outline: transparent;
@@ -46,6 +46,9 @@
             border-radius: 4px;
                 }
     margin-bottom: 20px;
+    @media screen and (min-width: 480px){
+        width: 450px;
+        }
     @media screen and (min-width: 1200px){
         width: 358px;
         }
@@ -66,7 +69,7 @@
     border: none;
     padding: 10px 28px;
     cursor: pointer;
-    margin-left: 125px;
+    margin: 0 auto;
     @media screen and (min-width: 1200px){
         margin-left: 12px;
         // height: 50px;

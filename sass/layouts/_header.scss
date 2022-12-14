@@ -64,16 +64,25 @@
     bottom: -33px;
 }
 
-.email {
-    // margin-left: 50px;
+.header__contact{
+    display: none;
     @media screen and (min-width: 768px) {
-        margin-left: 0;
-        margin-top: 10px;
+    display: block;
     }
     @media screen and (min-width: 1200px) {
-        margin-top: 0;
-        margin-left: 50px;
+        display: flex;
     }
+}
+.email {
+    // margin-left: 50px;
+    // @media screen and (min-width: 768px) {
+    //     margin-left: 0;
+    //     margin-top: 10px;
+    // }
+    // @media screen and (min-width: 1200px) {
+    //     margin-top: 0;
+    //     margin-left: 50px;
+    // }
 }
 
 .header-email-container {
@@ -89,8 +98,8 @@
 
 .header__link {
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1428;
+    font-size: 12px;
+    line-height: calc(14 / 12);
     letter-spacing: 0.02em;
     color: var(--color-gray);
     text-decoration: none;
@@ -101,6 +110,16 @@
     &:hover,
     &:focus {
         color: var(--color-blue);
+        }
+        @media screen and (min-width: 768px) {
+            margin-left: 0;
+            margin-top: 10px;
+        }
+        @media screen and (min-width: 1200px) {
+            margin-top: 0;
+            margin-left: 50px;
+            font-size: 14px;
+            line-height: calc(16 / 14);
         }
 }
 
@@ -120,6 +139,7 @@
     height: 100vh;
     background-color: #ffffff;
     top: 0;
+    z-index: 1;
     padding-top: 48px;
     padding-bottom: 48px;
     padding-left: 25px;
@@ -198,12 +218,17 @@
 }
 .mob__link {
     font-weight: 500;
-    font-size: 34px;
-    line-height: calc(40 / 34);
+    // font-size: 34px;
+    font-size: 25px;
+    line-height: calc(40 / 25);
     letter-spacing: 0.02em;
     color: #2196F3;
     display: block;
     margin-bottom: 32px;
+    @media screen and (min-width: 480px) {
+        font-size: 34px;
+        line-height: calc(40 / 34);
+    }
 }
 .mob__link-email {
     font-weight: 500;
@@ -211,11 +236,14 @@ font-size: 24px;
 line-height: calc(28 / 24);
 letter-spacing: 0.02em;
 color: #757575;
+word-break: break-word;
 }
 
 .mob-soc {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
+
 }
 .mob-soc-list {
     font-weight: 500;
@@ -223,6 +251,7 @@ color: #757575;
     line-height: calc(22 / 18);
     letter-spacing: 0.02em;
     color: #2196F3;
+    display: block;
 }
 .mob-after{
     position: relative;
